@@ -1,0 +1,294 @@
+.bihouse-door-icon3 {
+  height: 62px;
+  width: 71px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.logo-container-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-4xs);
+}
+.dream-home1 {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 90px;
+}
+.logo-container-footer-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.dream-home-is1 {
+  align-self: stretch;
+  height: 104px;
+  position: relative;
+  font-size: var(--font-size-mini);
+  line-height: 158.52%;
+  font-family: var(--h3);
+  color: var(--color-snow-100);
+  display: inline-block;
+  flex-shrink: 0;
+}
+.company-details1 {
+  width: 313px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-lg);
+  font-size: var(--font-size-sm);
+  font-family: var(--font-wellfleet);
+}
+.contact-us1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-family: inherit;
+}
+.deam-home-villas1 {
+  align-self: stretch;
+  position: relative;
+}
+.call-calling-icon1 {
+  width: 15px;
+  height: 14.4px;
+  position: relative;
+}
+.phone-icon-container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xs-8) 0 0;
+}
+.phone-number {
+  flex: 1;
+  position: relative;
+}
+.phone-icon-container-parent {
+  width: 134.5px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.darkicon1 {
+  width: 19.8px;
+  height: 19px;
+  position: relative;
+}
+.email-container1,
+.email-icon-container1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.email-icon-container1 {
+  flex-direction: column;
+  padding: var(--padding-2xs-5) 0 0;
+}
+.email-container1 {
+  width: 203.8px;
+  flex-direction: row;
+  gap: var(--gap-5xs);
+}
+.deam-home-villas-san-diego-ca-parent {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-xs);
+}
+.contact-info-inner,
+.contact-info1,
+.deam-home-villas-san-diego-ca-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.contact-info-inner {
+  width: 231px;
+  flex-direction: row;
+  font-size: var(--m3-body-large-size);
+  color: var(--color-gray-200);
+}
+.contact-info1 {
+  width: 206px;
+  flex-direction: column;
+  gap: var(--gap-lg);
+}
+.follow-us1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 124px;
+}
+.social-media-backgrounds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-100);
+  width: 100%;
+  height: 100%;
+}
+.akar-iconsinstagram-fill1 {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  z-index: 1;
+}
+.social-media-backgrounds-parent {
+  height: 32px;
+  width: 32px;
+  position: relative;
+}
+.ant-designyoutube-outlined-icon1 {
+  position: absolute;
+  top: 8px;
+  left: 8.5px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  z-index: 1;
+}
+.language-dropdown,
+.social-media-icons {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.language-dropdown {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-lg);
+}
+.android-globe-icon1 {
+  height: 18px;
+  width: 18px;
+  position: relative;
+  object-fit: cover;
+}
+.language-dropdown-formselect1 {
+  flex: 1;
+  font-family: var(--h3);
+  font-size: var(--font-size-lg);
+  color: var(--t);
+  gap: var(--gap-xl);
+}
+.language-container {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  border: 0.4px solid var(--t);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-sm) var(--padding-lg);
+  gap: var(--gap-9xs);
+}
+.company-info1,
+.language-selector1 {
+  width: 205px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-45xl);
+}
+.company-info1 {
+  width: 1170px;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.divider1,
+.footer-content1 {
+  align-self: stretch;
+  box-sizing: border-box;
+}
+.footer-content1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  max-width: 100%;
+}
+.divider1 {
+  height: 2px;
+  background-color: var(--color-snow-200);
+  border: 1px solid var(--l);
+}
+.alyeska-resor1,
+.divider1 {
+  position: relative;
+  mix-blend-mode: normal;
+}
+.footer-bottom,
+.footer1,
+.language-dropdown1 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.language-dropdown1 {
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+}
+.footer-bottom,
+.footer1 {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--t);
+  font-family: var(--font-pt-serif);
+}
+.footer1 {
+  gap: var(--gap-36xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--heading-size);
+  color: var(--color-white);
+  font-family: var(--h3);
+}
+@media screen and (max-width: 1050px) {
+  .company-info1 {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer-bottom {
+    gap: var(--gap-base);
+  }
+  .footer1 {
+    gap: var(--gap-8xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .contact-us1,
+  .follow-us1 {
+    font-size: var(--font-size-lgi);
+  }
+}

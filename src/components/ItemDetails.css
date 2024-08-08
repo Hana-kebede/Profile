@@ -1,0 +1,147 @@
+.item-details-child {
+  width: 577px;
+  height: 132px;
+  position: relative;
+  border-radius: 0 0 var(--br-5xs) var(--br-5xs);
+  background-color: var(--color-gray-100);
+  display: none;
+  max-width: 100%;
+}
+.birr {
+  position: relative;
+  line-height: 139.52%;
+  font-weight: 600;
+}
+.price-value-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-8xs-5) 0 0;
+}
+.view-button {
+  white-space: nowrap;
+}
+.price-and-button {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  z-index: 1;
+}
+.group-icon {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.fluentbed-20-regular-icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.bedroom-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) 0 0;
+}
+.bedrooms {
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 89px;
+  z-index: 1;
+}
+.bedroom-details {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.bath {
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 47px;
+  z-index: 1;
+}
+.bathroom-details {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xl) 0 0;
+  gap: var(--gap-9xs);
+}
+.sq-m {
+  position: relative;
+  line-height: 20px;
+  font-weight: 600;
+  display: inline-block;
+  min-width: 68px;
+  z-index: 1;
+}
+.group-div,
+.item-details {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+.group-div {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-2xs) var(--padding-38xl) var(--padding-2xs)
+    var(--padding-18xl);
+  position: relative;
+  gap: var(--gap-xl);
+  z-index: 1;
+  font-size: var(--font-size-sm);
+  color: var(--t);
+}
+.item-details {
+  border-radius: 0 0 var(--br-5xs) var(--br-5xs);
+  background-color: var(--color-gray-100);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-base) var(--padding-mini);
+  box-sizing: border-box;
+  gap: var(--gap-base);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--heading-size);
+  color: var(--color-snow-100);
+  font-family: var(--h3);
+}
+@media screen and (max-width: 750px) {
+  .group-div {
+    flex-wrap: wrap;
+    padding-right: var(--padding-9xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .birr {
+    font-size: var(--font-size-lgi);
+    line-height: 27px;
+  }
+  .price-and-button {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,32 @@
+.avatar,
+.initials {
+  align-self: stretch;
+  display: flex;
+}
+.initials {
+  width: 0;
+  position: relative;
+  line-height: 120%;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.avatar {
+  width: var(--icon-large);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-lgi);
+  box-sizing: border-box;
+  background-image: url(/public/avatar@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  font-size: var(--subheading-size);
+  color: var(--text-brand-on-brand);
+  font-family: var(--body-emphasis);
+}

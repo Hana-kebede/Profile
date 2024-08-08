@@ -1,0 +1,38 @@
+.profile-page-child {
+  width: 32px;
+  height: 32px;
+  display: none;
+}
+.frame-group,
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.frame-group {
+  align-self: stretch;
+  align-items: flex-end;
+  max-width: 100%;
+}
+.profile-page {
+  width: 100%;
+  position: relative;
+  background-color: var(--b);
+  overflow: hidden;
+  align-items: flex-start;
+  padding: 0 0 45px;
+  box-sizing: border-box;
+  gap: 178px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 750px) {
+  .profile-page {
+    gap: 89px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .profile-page {
+    gap: 44px;
+  }
+}

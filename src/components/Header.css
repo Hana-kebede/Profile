@@ -1,0 +1,106 @@
+.bihouse-door-icon1 {
+  height: 39.1px;
+  width: 39.1px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.brand-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xl);
+}
+.adama-homes {
+  position: relative;
+  line-height: 20px;
+  display: inline-block;
+  min-width: 98px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.brand-container-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.home {
+  position: relative;
+  min-width: 40px;
+}
+.home-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) 0 0;
+}
+.about-us {
+  position: relative;
+  min-width: 63px;
+  white-space: nowrap;
+}
+.user-actions {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) 0 0;
+}
+.header,
+.nav-items,
+.navigation,
+.user-actions {
+  display: flex;
+  align-items: flex-start;
+}
+.nav-items {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.header,
+.navigation {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.navigation {
+  width: 470px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) 0 0;
+}
+.header {
+  margin-left: -1px;
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: var(--padding-smi) var(--padding-xl) var(--padding-3xs-9);
+  gap: var(--gap-583xl);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-wellfleet);
+}
+@media screen and (max-width: 1200px) {
+  .header {
+    gap: var(--gap-282xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .nav-items {
+    display: none;
+  }
+  .navigation {
+    width: 0;
+  }
+  .header {
+    gap: var(--gap-131xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .header {
+    gap: var(--gap-56xl);
+  }
+}
