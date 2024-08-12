@@ -76,13 +76,14 @@
   object-fit: cover;
   z-index: 3;
 }
-.aman-banti-joined-container {
+.name-joined-container {
   border: 0;
   background-color: transparent;
+  height: 80px;
   flex: 1;
   position: relative;
   min-width: 163px;
-  padding: 40;
+  padding: 40px 0 0 70px;
 }
 .email-content {
   width: 271px;
@@ -93,49 +94,9 @@
   padding: var(--padding-5xl) 0 0;
   box-sizing: border-box;
 }
-.frame-child2 {
-  height: 32px;
+.joined-date-content-child {
   width: 120px;
-  position: relative;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-white);
-  display: none;
-}
-.edit-icon2 {
-  height: 26px;
-  width: 27px;
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
-  z-index: 4;
-}
-.edit-profile1 {
-  align-self: stretch;
-  flex: 1;
-  position: relative;
   cursor: pointer;
-  z-index: 4;
-}
-.edit-profile-container,
-.rectangle-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.edit-profile-container {
-  flex: 1;
-  flex-direction: column;
-  padding: var(--padding-6xs) 0 0;
-}
-.rectangle-container {
-  width: 120px;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-white);
-  flex-direction: row;
-  padding: var(--padding-12xs) var(--padding-3xs) var(--padding-8xs)
-    var(--padding-smi);
-  box-sizing: border-box;
-  gap: var(--gap-8xs);
   z-index: 3;
 }
 .joined-content,
@@ -156,7 +117,7 @@
   padding: 0 var(--padding-mini) 0 0;
   box-sizing: border-box;
 }
-.frame-child3 {
+.frame-child2 {
   width: 632px;
   height: 176px;
   position: relative;
@@ -274,7 +235,7 @@
 }
 .amanbantigmailcom-parent,
 .contact-content,
-.frame-parent1 {
+.frame-div {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -287,10 +248,10 @@
   min-width: 106px;
 }
 .contact-content,
-.frame-parent1 {
+.frame-div {
   flex-direction: row;
 }
-.frame-parent1 {
+.frame-div {
   width: 220px;
   gap: var(--gap-base);
   font-size: var(--m3-body-large-size);
@@ -302,7 +263,7 @@
   box-sizing: border-box;
   max-width: 100%;
 }
-.location-on-icon2 {
+.location-on-icon1 {
   height: 30px;
   width: 29px;
   position: relative;
@@ -368,14 +329,14 @@
   flex-direction: row;
   gap: var(--gap-8xs);
 }
-.frame-div,
+.rectangle-container,
 .user-details {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   max-width: 100%;
 }
-.frame-div {
+.rectangle-container {
   width: 632px;
   border-radius: var(--br-mini);
   background-color: var(--color-white);

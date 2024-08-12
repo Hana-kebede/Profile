@@ -4,13 +4,47 @@ import { Button, Form } from "react-bootstrap";
 import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
 import "./ProfileSetting.css";
+import React, { useState } from 'react';
+import ProfilePictureInput from "../components/ProfilePictureInput";
+export default function ProfileSetting  ({})  {
+  const [profilePicture, setProfilePicture] = useState(null);
 
-const ProfileSetting = () => {
+  const handlePictureChange = (newPicture) => {
+    setProfilePicture(newPicture);
+    // You can now upload the new picture to a server or store it in the state
+  };
+
   const navigate = useNavigate();
 
   const onButtonClick = useCallback(() => {
-    navigate("/");
+    navigate("/profile-page");
   }, [navigate]);
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    phone: '',
+    address: '',
+  });
+  
+
+  const handleInputChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log(formData);
+  };
+  const updateProfile = (data) => {
+    // Code to update the user profile with the new data
+    console.log('Updated profile:', data);
+  };
+
+
+  const onUploadPlaceholdersClick = useCallback(() => {
+    //TODO: edit profile name
+  }, []);
 
   return (
     <div className="profile-setting">
@@ -30,12 +64,11 @@ const ProfileSetting = () => {
                 <div className="edit-profile-wrapper">
                   <div className="edit-profile"> Edit Profile</div>
                 </div>
-                <img
-                  className="edit-icon"
-                  loading="lazy"
-                  alt=""
-                  src="/ellipse-12@2x.png"
-                />
+                
+                  <div >
+                  < ProfilePictureInput onPictureChange={handlePictureChange} />
+                   </div>
+                
               </div>
             </div>
             <form className="photo-field">
@@ -65,7 +98,7 @@ const ProfileSetting = () => {
                     <div className="phone-field">
                       <div className="phone">{`Phone `}</div>
                       <div className="phone-number-value">
-                        <i className="your-phone-number">Your Phone Number</i>
+                      <i className="your-phone-number">Your Phone Number</i>
                       </div>
                     </div>
                   </div>
@@ -75,39 +108,85 @@ const ProfileSetting = () => {
                       <i className="your-address">Your Address</i>
                     </div>
                   </div>
-                  <div className="save-button-container">
+                  
+                </div>
+              </div>
+     <form onSubmit={handleSubmit}>
+     
+                  
+                
+              <div className="image-upload">
+              <div  className="upload-button">
+                   
+                  <div className="upload-button-child" />
+                  <img className="upload-icon" alt="" src="/upload.svg" />
+                  <div className="upload-label">
+                    <div className="upload-new-photo">Upload New Photo</div>
+                   </div>
+                  
+                </div>
+              
+                <Form>
+                
+                   <label className="upload-placeholders">
+                   
+          <input
+            type="text"
+            name="fullName"           
+            value={formData.fullName}
+            onChange={handleInputChange}
+            required
+          />
+          </label>
+                </Form>
+                
+                <Form>
+                <label className="upload-placeholders1" >
+          <input
+            type="email"
+            name="email"          
+            value={formData.email}
+            onChange={handleInputChange}
+            required
+          />
+          </label>
+          </Form>
+                <Form >
+                <label className="upload-placeholders2" >
+          <input
+            type="tel"
+            name="phone"          
+            value={formData.phone}
+            onChange={handleInputChange}
+            required
+          />
+                  </label>
+                </Form>
+                <Form >
+                <label className="upload-placeholders2" >
+          <textarea
+            name="address"
+            value={formData.address}
+            onChange={handleInputChange}
+            required
+          />
+                   </label>
+                </Form>
+                <div className="save-button-container">
                     <Button
                       className="button"
                       variant="outline-primary"
                       size="lg"
                       onClick={onButtonClick}
+                      type="submit"
                     >
                       Save Change
                     </Button>
-                  </div>
-                </div>
+                  </div>      
+                
+                
               </div>
-              <div className="image-upload">
-                <div className="upload-button">
-                  <div className="upload-button-child" />
-                  <img className="upload-icon" alt="" src="/upload.svg" />
-                  <div className="upload-label">
-                    <div className="upload-new-photo">Upload New Photo</div>
-                  </div>
-                </div>
-                <Form className="upload-placeholders">
-                  <Form.Control type="text" name="FullName" />
-                </Form>
-                <Form className="upload-placeholders1">
-                  <Form.Control type="email" name="email" />
-                </Form>
-                <Form className="upload-placeholders">
-                  <Form.Control type="number" name="phone" />
-                </Form>
-                <Form className="upload-placeholders">
-                  <Form.Control type="text" name="address" />
-                </Form>
-              </div>
+              </form>
             </form>
           </div>
         </section>
@@ -232,4 +311,4 @@ const ProfileSetting = () => {
   );
 };
 
-export default ProfileSetting;
+//export default ProfileSetting;

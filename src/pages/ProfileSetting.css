@@ -382,17 +382,26 @@
     var(--padding-9xs);
   z-index: 3;
 }
-.upload-placeholders,
+.upload-placeholders {
+  border: 0;
+  background-color: transparent;
+  align-self: stretch;
+  height: 44px;
+  position: relative;
+  cursor: pointer;
+  z-index: 3;
+}
 .upload-placeholders1 {
+  min-width: 250px;
+}
+.upload-placeholders1,
+.upload-placeholders2 {
   border: 0;
   background-color: transparent;
   align-self: stretch;
   height: 44px;
   position: relative;
   z-index: 3;
-}
-.upload-placeholders1 {
-  min-width: 250px;
 }
 .image-upload {
   flex: 1;
@@ -632,7 +641,8 @@
   flex: 1;
   font-family: var(--h3);
   font-size: var(--font-size-lg);
-  color: var(--t);
+  color: var(--text-brand-on-brand); /* Set the text color to black */
+  background-color: var(--text-on-brand); /* Set the field color to white */
   gap: var(--gap-xl);
 }
 .language-selector {

@@ -190,7 +190,8 @@
   flex: 1;
   font-family: var(--h3);
   font-size: var(--font-size-lg);
-  color: var(--t);
+  color: var(--text-brand-on-brand); /* Set the text color to black */
+  background-color: var(--text-on-brand); /* Set the field color to white */
   gap: var(--gap-xl);
 }
 .language-container {

@@ -3,7 +3,7 @@ import FrameComponent1 from "../components/FrameComponent1";
 import FrameComponent2 from "../components/FrameComponent2";
 import Footer from "../components/Footer";
 import "./ProfilePage.css";
-
+import React, { useState } from 'react';
 const ProfilePage = () => {
   return (
     <div className="profile-page">

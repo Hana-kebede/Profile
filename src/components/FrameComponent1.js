@@ -1,16 +1,39 @@
-import { useCallback } from "react";
+import React, { useCallback } from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Form, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./FrameComponent1.css";
-
-const FrameComponent1 = ({ className = "" }) => {
+import { useState, useEffect } from 'react';
+export default function FrameComponent1  ({ className = "" })  {
   const navigate = useNavigate();
 
-  const onEditProfileTextClick = useCallback(() => {
+  const onFrameButtonClick = useCallback(() => {
     navigate("/profile-setting");
   }, [navigate]);
+  const [userProfile, setUserProfile] = useState({
+    fullName: '',
+    email: '',
+    phone: '',
+    address: '',
+  });
+
+  useEffect(() => {
+    // Fetch the user profile data from the server or local storage
+    fetchUserProfile();
+  }, []);
+
+  const fetchUserProfile = () => {
+    // Code to fetch the user profile data
+    // and update the state
+    setUserProfile({
+      fullName: 'Hana kebede',
+      email: 'Hana@gmail.com',
+      phone: '0911111111',
+      address: 'Adama, Ethiopia',
+    });
+  };
+  
 
   return (
     <div className={`profile-content-wrapper ${className}`}>
@@ -34,96 +57,91 @@ const FrameComponent1 = ({ className = "" }) => {
             alt=""
             src="/ellipse-121@2x.png"
           />
-          <div className="user-details">
-            <div className="joined-content">
-              <div className="joined-date-content">
-                <div className="email-content">
-                  <Form className="aman-banti-joined-container">
-                    <Form.Label>Your Name</Form.Label>
-                    <Form.Control type="text" name="your-name" id="your-name" />
-                  </Form>
-                </div>
-                <div className="rectangle-container">
-                  <div className="frame-child2" />
-                  <img className="edit-icon2" alt="" src="/edit1.svg" />
-                  <div className="edit-profile-container">
-                    <Button
-                      className="edit-profile1"
-                      variant="outline-primary"
-                      size="sm"
-                      onClick={onEditProfileTextClick}
-                    >
-                      Edit Profile
-                    </Button>
-                  </div>
+  <form >
+      <div className="user-details">
+      <div className="joined-content">
+        <div className="joined-date-content">
+          <div className="email-content">
+            <Form className="name-joined-container">
+            <p>
+            <strong>Name:</strong> {userProfile.fullName}
+          </p>
+            </Form>
+          </div> 
+          <Button
+                  className="joined-date-content-child"
+                  variant="outline-primary"
+                  onClick={onFrameButtonClick}
+                > Edit Profile
+                  
+                </Button>
+        </div>
+      </div>
+      
+       <div className="rectangle-container">
+         <div className="frame-child2" />
+        <div className="contact-content">
+          <div className="joined-date-content">
+            <div className="frame-wrapper">
+              <div className="emoji-parent">
+                <img
+                  className="emoji-icon"
+                  loading="lazy"
+                  alt=""
+                  src="/emoji.svg"
+                />
+                <div className="phone-number-prefix-parent">
+                <p>
+            <strong>Phone:</strong> {userProfile.phone}
+          </p>
                 </div>
               </div>
             </div>
             <div className="frame-div">
-              <div className="frame-child3" />
-              <div className="contact-content">
-                <div className="joined-date-content">
-                  <div className="frame-wrapper">
-                    <div className="emoji-parent">
-                      <img
-                        className="emoji-icon"
-                        loading="lazy"
-                        alt=""
-                        src="/emoji.svg"
-                      />
-                      <div className="phone-number-prefix-parent">
-                        <input className="phone-number-prefix" type="text" />
-                        <div className="phone-number-content">
-                          <div className="phone1">Phone</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="frame-parent1">
-                    <div className="emoji-wrapper">
-                      <img
-                        className="emoji-icon1"
-                        loading="lazy"
-                        alt=""
-                        src="/emoji-1.svg"
-                      />
-                    </div>
-                    <div className="amanbantigmailcom-parent">
-                      <div className="amanbantigmailcom">
-                        <span>amanbanti</span>
-                        <span className="gmailcom">@gmail.com</span>
-                      </div>
-                      <input className="email1" type="text" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="location-on-group">
+              <div className="emoji-wrapper">
                 <img
-                  className="location-on-icon2"
+                  className="emoji-icon1"
                   loading="lazy"
                   alt=""
-                  src="/location-on.svg"
+                  src="/emoji-1.svg"
                 />
-                <div className="location-content-wrapper">
-                  <div className="location-content">
-                    <input className="addis-ababa-ethiopia" type="text" />
-                    <div className="address-wrapper">
-                      <div className="address1">Address</div>
-                    </div>
-                  </div>
-                </div>
+              </div>
+              <div className="amanbantigmailcom-parent">
+              <p>
+            <strong>Email:</strong> {userProfile.email}
+          </p>
               </div>
             </div>
           </div>
         </div>
+        <div className="location-on-group">
+          <img
+            className="location-on-icon2"
+            loading="lazy"
+            alt=""
+            src="/location-on1.svg"
+          />
+          <div className="location-content-wrapper">
+            <div className="location-content">
+            <p>
+            <strong>Address:</strong> {userProfile.address}
+          </p>
+            </div>
+          </div>
+        </div>
       </div>
+      
     </div>
-  );
-};
+    </form>
+  </div>
+</div>
+</div>
+    
+   );
+ };
 
 FrameComponent1.propTypes = {
   className: PropTypes.string,
 };
 
-export default FrameComponent1;
+//export default FrameComponent1;

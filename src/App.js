@@ -9,6 +9,7 @@ import ProfilePage from "./pages/ProfilePage";
 import ProfileSetting from "./pages/ProfileSetting";
 
 function App() {
+  
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
@@ -49,10 +50,15 @@ function App() {
   }, [pathname]);
 
   return (
+    
     <Routes>
-      <Route path="/" element={<ProfilePage />} />
+      <Route path="/profile-page" element={<ProfilePage />} />
       <Route path="/profile-setting" element={<ProfileSetting />} />
+      
     </Routes>
+   
+        
+    
   );
 }
 export default App;
